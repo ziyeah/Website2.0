@@ -25,5 +25,16 @@
   position: relative;
   width: 40%;
   min-width: 350px;
-  max-width: 550px;
+  max-width: 450px;
+}
+
+.block-container {
+  margin-top: 4%;
+}
+
+.block {
+  position: relative;
+  width: 5%;
+  max-width: 75px;
+  min-width: 50px;
 }

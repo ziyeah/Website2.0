@@ -17,11 +17,12 @@ body {
   min-width: 800px;
   left: 0;
   bottom: 0;
-  /* z-index: -100; */
+  z-index: -100;
 }
 
 .point {
   max-width: 1000px;
+  min-width: 350px;
   width: 80%;
   left: 0;
   top: 0;

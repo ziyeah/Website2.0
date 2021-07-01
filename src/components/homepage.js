@@ -1,10 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "./homepage.css";
 
 import board from "../image/board.png";
+import blockQuestionMark from "../image/block-questionmark.gif";
+import block from "../image/block.png";
 
 function HomePage() {
+  const history = useHistory();
+
   function jump() {
     var character = document.getElementById("character");
     if (character.classList === "jump-animate") {
@@ -16,24 +20,53 @@ function HomePage() {
     }, 1000);
   }
 
+  const navWork = () => {
+    jump();
+    setTimeout(function () {
+      history.push("/working");
+    }, 1200);
+  };
+  const navProject = () => {
+    jump();
+    setTimeout(function () {
+      history.push("/project");
+    }, 1200);
+  };
+  const navEducation = () => {
+    jump();
+    setTimeout(function () {
+      history.push("/education");
+    }, 1200);
+  };
+
   return (
     <div className="container">
       <img className="board" src={board} alt="board"></img>
 
-      <div className="nav">
-        <Link to="/working" className="nav-link">
-          <button>Working</button>
-        </Link>
-        <Link to="/project" className="nav-link">
-          <button>Project</button>
-        </Link>
-        <Link to="/education" className="nav-link">
-          <button>Education</button>
-        </Link>
-      </div>
-
       <div id="character"></div>
-      <button onClick={jump}>jump</button>
+
+      <div className="block-container">
+        <img
+          className="block"
+          src={blockQuestionMark}
+          onClick={navWork}
+          alt="block-question-mark"
+        ></img>
+        <img className="block" src={block} alt="block"></img>
+        <img
+          className="block"
+          src={blockQuestionMark}
+          onClick={navProject}
+          alt="block-question-mark"
+        ></img>
+        <img className="block" src={block} alt="block"></img>
+        <img
+          className="block"
+          src={blockQuestionMark}
+          onClick={navEducation}
+          alt="block-question-mark"
+        ></img>
+      </div>
     </div>
   );
 }
