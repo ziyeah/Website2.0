@@ -2,10 +2,10 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import HomePage from "./components/homepage";
-import Working from "./components/working";
-import Project from "./components/project";
-import Education from "./components/education";
+import HomePage from "./page/homepage";
+import Working from "./page/working";
+import Project from "./page/project";
+import Education from "./page/education";
 
 import floor from "./image/hill&floor.png";
 import point from "./image/points-at-top.gif";
