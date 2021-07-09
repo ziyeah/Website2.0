@@ -1,0 +1,5 @@
+.working-container {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+}

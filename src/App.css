@@ -18,7 +18,7 @@ body {
   min-width: 800px;
   left: 0;
   bottom: 0;
-  /* z-index: -100; */
+  z-index: 0;
 }
 
 .point {
