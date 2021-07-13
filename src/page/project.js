@@ -5,6 +5,8 @@ import "./project.css";
 
 import proj1 from "../image/proj1.jpg";
 import proj2 from "../image/proj2.jpg";
+import proj3 from "../image/proj3_2.jpg";
+import proj4 from "../image/proj4.jpg";
 
 function Project() {
   return (
@@ -27,7 +29,7 @@ function Project() {
       />
 
       <MediaCard
-        image={proj1}
+        image={proj3}
         title="Graph signal processing based on network science"
         content="The project focuses on data classification via graph 
           convolutional network."
@@ -35,7 +37,7 @@ function Project() {
       />
 
       <MediaCard
-        image={proj1}
+        image={proj4}
         title="Ultrasound Images Segmentation"
         content="This study proposes an algorithm to segment the carotid 
           artery wall from ultrasound images."
