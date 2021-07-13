@@ -4,6 +4,7 @@ import MediaCard from "./../component/card";
 import "./project.css";
 
 import proj1 from "../image/proj1.jpg";
+import proj2 from "../image/proj2.jpg";
 
 function Project() {
   return (
@@ -18,11 +19,19 @@ function Project() {
       />
 
       <MediaCard
+        image={proj2}
+        title="Houseworks tracker"
+        content="The project focuses on data classification via graph 
+          convolutional network."
+        stacts="Python, MATLAB, computer version"
+      />
+
+      <MediaCard
         image={proj1}
         title="Graph signal processing based on network science"
         content="The project focuses on data classification via graph 
           convolutional network."
-        stacts="Python, MATLAB, computer version"
+        stacts="React, JavaScript, HTML, CSS, Node, axios, MongoDB"
       />
 
       <MediaCard
