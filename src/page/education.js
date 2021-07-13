@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import MediaCard from "./../component/card";
 import "./education.css";
 
-import proj1 from "../image/proj1.jpg";
+import ur from "../image/ur.jpg";
+import ncut from "../image/ncut.jpg";
 
 function Education() {
   return (
     <div className="education-container">
       <MediaCard
-        image={proj1}
+        image={ur}
         title="University of Rochester"
         time="2018-2020"
         content="Electrical and Computer Engineering"
@@ -17,7 +18,7 @@ function Education() {
       />
 
       <MediaCard
-        image={proj1}
+        image={ncut}
         title="North China University of Technology"
         time="2014-2018"
         content="Electrical Engineering"
