@@ -29,6 +29,11 @@
   max-width: 450px;
   z-index: 100;
 }
+@media only screen and (min-height: 700px) {
+  .board {
+    margin-top: 8%;
+  }
+}
 
 .block-container {
   margin-top: 2%;

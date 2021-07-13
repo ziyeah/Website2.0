@@ -11,7 +11,7 @@ import floor from "./image/hill&floor.png";
 import point from "./image/points-at-top.gif";
 
 function App() {
-  const pointImgBottom = 0;
+  // const pointImgBottom = 0;
 
   return (
     <div className="App">

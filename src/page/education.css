@@ -3,3 +3,20 @@
   flex-direction: row;
   width: max-content;
 }
+
+@media only screen and (max-width: 500px) {
+  .education-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-height: 700px) {
+  .education-container {
+    margin-top: 8%;
+  }
+}
+
+.nav {
+  z-index: 100;
+}
