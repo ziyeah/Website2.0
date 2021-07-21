@@ -5,12 +5,15 @@ import "./homepage.css";
 import board from "../image/board.png";
 import blockQuestionMark from "../image/block-questionmark.gif";
 import block from "../image/block.png";
+import mushroom from "../image/mushroom.png";
+import coin from "../image/coin.png";
+import flower from "../image/flower.png";
 
 function HomePage() {
   const history = useHistory();
 
-  function jump() {
-    var character = document.getElementById("character");
+  function jump(imgId) {
+    var character = document.getElementById(imgId);
     if (character.classList === "jump-animate") {
       return;
     }
@@ -21,51 +24,62 @@ function HomePage() {
   }
 
   const navWork = () => {
-    jump();
+    jump("mushroom");
     setTimeout(function () {
       history.push("/working");
-    }, 1200);
+    }, 1000);
   };
   const navProject = () => {
-    jump();
+    jump("coin");
     setTimeout(function () {
       history.push("/project");
-    }, 1200);
+    }, 1000);
   };
   const navEducation = () => {
-    jump();
+    jump("flower");
     setTimeout(function () {
       history.push("/education");
-    }, 1200);
+    }, 1000);
   };
 
   return (
     <div className="container">
       <img className="board" src={board} alt="board"></img>
 
-      <div id="character"></div>
+      {/* <div id="character"></div> */}
+
+      <div className="block-popup-container">
+        <img id="mushroom" src={mushroom} alt="mushroom"></img>
+        <img id="coin" src={coin} alt="coin"></img>
+        <img id="flower" src={flower} alt="flower"></img>
+      </div>
 
       <div className="block-container">
         <img
-          className="block"
+          className="block-clickable"
           src={blockQuestionMark}
           onClick={navWork}
           alt="block-question-mark"
         ></img>
         <img className="block" src={block} alt="block"></img>
         <img
-          className="block"
+          className="block-clickable"
           src={blockQuestionMark}
           onClick={navProject}
           alt="block-question-mark"
         ></img>
         <img className="block" src={block} alt="block"></img>
         <img
-          className="block"
+          className="block-clickable"
           src={blockQuestionMark}
           onClick={navEducation}
           alt="block-question-mark"
         ></img>
+      </div>
+      <div className="block-name-container">
+        <span className="block-name">work</span>
+        <span className="block-name">project</span>
+        <span className="block-name">education</span>
       </div>
     </div>
   );
