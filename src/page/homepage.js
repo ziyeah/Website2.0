@@ -6,7 +6,7 @@ import board from "../image/board.png";
 import blockQuestionMark from "../image/block-questionmark.gif";
 import block from "../image/block.png";
 import mushroom from "../image/mushroom.png";
-import coin from "../image/coin.png";
+import mushroom2 from "../image/mushroom2.png";
 import flower from "../image/flower.png";
 
 function HomePage() {
@@ -20,26 +20,26 @@ function HomePage() {
     character.classList.add("jump-animate");
     setTimeout(function () {
       character.classList.remove("jump-animate");
-    }, 1000);
+    }, 2000);
   }
 
   const navWork = () => {
     jump("mushroom");
     setTimeout(function () {
       history.push("/working");
-    }, 1000);
+    }, 1700);
   };
   const navProject = () => {
-    jump("coin");
+    jump("mushroom2");
     setTimeout(function () {
       history.push("/project");
-    }, 1000);
+    }, 1700);
   };
   const navEducation = () => {
     jump("flower");
     setTimeout(function () {
       history.push("/education");
-    }, 1000);
+    }, 1700);
   };
 
   return (
@@ -50,7 +50,7 @@ function HomePage() {
 
       <div className="block-popup-container">
         <img id="mushroom" src={mushroom} alt="mushroom"></img>
-        <img id="coin" src={coin} alt="coin"></img>
+        <img id="mushroom2" src={mushroom2} alt="mushroom2"></img>
         <img id="flower" src={flower} alt="flower"></img>
       </div>
 
