@@ -20,6 +20,13 @@
   }
 }
 
+@media only screen and (min-height: 900px) {
+  .bottom-content {
+    position: relative;
+    top: 110px;
+  }
+}
+
 .block-container {
   z-index: 100;
 }
@@ -42,13 +49,28 @@
   cursor: pointer;
 }
 
+.block-name-container{
+  display: flex;
+  justify-content: center;
+}
 .block-name {
   color: white;
   font-size: larger;
   font-weight: bold;
   z-index: 100;
-  margin-left: 2.4%;
-  margin-right: 1.4%;
+  margin-right: 60px;
+}
+.block-name:hover {
+  cursor: pointer;
+}
+.block-name-right {
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  z-index: 100;
+}
+.block-name-right:hover {
+  cursor: pointer;
 }
 
 .block-popup-container {
@@ -59,6 +81,12 @@
   top: 60px;
   z-index: 99;
 }
+/* @media only screen and (min-height: 1000px) {
+  .block-popup-container {
+    position: relative;
+    top: 160px;
+  }
+} */
 
 #mushroom {
   position: relative;
