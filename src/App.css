@@ -22,7 +22,25 @@ body {
 }
 
 .point {
-  max-width: 1000px;
-  min-width: 350px;
-  width: 80%;
+  position: fixed;
+  left: 15%;
+  top: 10px;
+  width: 800px;
 }
+
+@media only screen and (max-width: 750px) {
+  .point {
+    width: 400px;
+  }
+}
+
+/* .layout {
+  margin-top: 65px;
+  background-color: pink;
+}
+
+@media only screen and (max-width: 750px) {
+  .layout {
+    margin-top: 35px;
+  }
+} */

@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: row;
   width: max-content;
+  margin-top: 65px;
+}
+@media only screen and (max-width: 750px) {
+  .working-container {
+    margin-top: 35px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -17,6 +23,26 @@
   }
 }
 
-.nav {
-  z-index: 100;
+.back-image {
+  z-index: -100;
 }
+
+#castle {
+  position: absolute;
+  bottom: 0;
+  max-height: 600px;
+  margin-left: 50px;
+}
+#castle:hover {
+  cursor: pointer;
+}
+
+/* .layout {
+  margin-top: 65px;
+}
+
+@media only screen and (max-width: 750px) {
+  .layout {
+    margin-top: 35px;
+  }
+} */

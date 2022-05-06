@@ -46,8 +46,6 @@ function HomePage() {
     <div className="container">
       <img className="board" src={board} alt="board"></img>
 
-      {/* <div id="character"></div> */}
-
       <div className="block-popup-container">
         <img id="mushroom" src={mushroom} alt="mushroom"></img>
         <img id="mushroom2" src={mushroom2} alt="mushroom2"></img>

@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: row;
   width: max-content;
+  margin-top: 65px;
+}
+@media only screen and (max-width: 750px) {
+  .education-container {
+    margin-top: 35px;
+  }
 }
 
 @media only screen and (max-width: 500px) {

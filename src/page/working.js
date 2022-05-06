@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import MediaCard from "./../component/card";
 import "./working.css";
 
+import castle from "../image/castle.png";
+
 function Working() {
+  // console.log(window.innerHeight);
+
   return (
     <div className="working-container">
       <MediaCard
@@ -40,9 +44,9 @@ function Working() {
         stacts="React, JavaScript, HTML, CSS, D3.js"
       />
 
-      <div className="nav">
+      <div className="back-image">
         <Link to="/" className="navbar-brand">
-          <button>Back</button>
+          <img id="castle" src={castle} alt="castle"></img>
         </Link>
       </div>
     </div>
